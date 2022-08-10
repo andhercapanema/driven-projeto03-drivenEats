@@ -93,6 +93,7 @@ h2 {
     height: 87px;
     width: 144px;
     border-radius: 4px;
+    object-fit: cover;
 }
 
 h3 {
