@@ -21,7 +21,8 @@ h2 {
 
 header {
     background-color: #cf2b2b;
-    height: 92px;
+    height: auto;
+    min-height: 92px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,10 +123,12 @@ h3 {
 /* BOTTOM BUTTON */
 
 footer {
-    height: 92px;
+    height: auto;
+    min-height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15px 0;
 
     position: fixed;
     bottom: 0;
@@ -135,16 +138,17 @@ footer {
 }
 
 button {
-    height: 61px;
-    width: 364px;
+    height: auto;
+    min-height: 61px;
+    width: 87.9227%;
+    max-width: 364px;
     background-color: #cbcbcb;
     border: none;
-    border-radius: 30.5px;
+    border-radius: 50px;
 
     color: #fff;
     font-size: 20px;
     letter-spacing: 0.018em;
-    padding: 0 75px;
 }
 
 /* SELECT ITEMS */
@@ -171,4 +175,72 @@ ion-icon {
 .ready {
     background-color: #32B72F;
     font-weight: 700;
+}
+
+/* CHECK REQUEST */
+
+body .hide {
+    display: none;
+}
+
+.confirmation {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #fff;
+}
+
+.confirmation>div {
+    width: 91.0628%;
+    max-width: 353px;
+    background-color: #50D074;
+    /* height: 377px; */
+    padding: 21px 25px 0;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+
+.confirmation>div>p {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.confirmation div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirmation div div p {
+    margin-bottom: 13px;
+}
+
+.confirmation button {
+    width: 100%;
+    height: auto;
+    min-height: 52px;
+    padding: 0;
+}
+
+.confirmation button:first-of-type {
+    color: #50D074;
+    background-color: #fff;
+    font-size: 22px;
+    margin-top: 11px;
+}
+
+.confirmation button:last-of-type {
+    color: #fff;
+    background-color: #50D074;
+    font-size: 20px;
 }
