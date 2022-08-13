@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+
+}
+
+h1,
+h2 {
+    font-family: 'Righteous', cursive;
+}
+
+/* HEADER */
+
+header {
+    background-color: #cf2b2b;
+    height: auto;
+    min-height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 21px;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* MENU */
+
+.menu {
+    background-color: #eee;
+    margin: 92px 0;
+    padding-top: 21px;
+}
+
+.category {
+    margin: 10px 0 0;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    padding-left: 19px;
+}
+
+.options {
+    display: flex;
+    padding: 17px 0;
+    padding-left: 19px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.options::-webkit-scrollbar {
+    display: none;
+}
+
+.options div {
+    background-color: #fff;
+    margin-right: 16px;
+    height: 216px;
+    width: 172px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    border-radius: 9px;
+    padding: 18px 14px 13px;
+    position: relative;
+}
+
+.options img {
+    height: 87px;
+    width: 144px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 8px;
+}
+
+.options p {
+    color: #A6A6A6;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 4px;
+}
+
+.options p:last-of-type {
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    position: absolute;
+    left: 14px;
+    bottom: 13px;
+}
+
+/* BOTTOM BUTTON */
+
+footer {
+    height: auto;
+    min-height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+.c-btn {
+    height: auto;
+    min-height: 61px;
+    width: 87.9227%;
+    max-width: 364px;
+    background-color: #cbcbcb;
+    border: none;
+    border-radius: 50px;
+
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0.018em;
+}
+
+/* SELECTED ITEMS */
+
+.options .is-selected {
+    box-shadow: 0px 0px 0px 5px #32B72F;
+}
+
+ion-icon {
+    color: #32B72F;
+    font-size: 19px;
+    position: absolute;
+    right: 14px;
+    bottom: 13px;
+    display: none;
+}
+
+.is-selected ion-icon {
+    display: initial;
+}
+
+/* FINISH RESQUEST */
+
+.c-btn-active {
+    background-color: #32B72F;
+    font-weight: 700;
+}
+
+/* CHECK REQUEST */
+
+.confirmation {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #fff;
+}
+
+.confirmation>div {
+    width: 91.0628%;
+    max-width: 353px;
+    background-color: #50D074;
+    /* height: 377px; */
+    padding: 21px 25px 0;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+
+.confirmation>div>p {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.confirmation div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirmation div div p {
+    margin-bottom: 13px;
+}
+
+.confirmation .c-btn {
+    width: 100%;
+    height: auto;
+    min-height: 52px;
+    padding: 0;
+}
+
+.confirmation .c-btn:first-of-type {
+    color: #50D074;
+    background-color: #fff;
+    font-size: 22px;
+    margin-top: 11px;
+}
+
+.confirmation .c-btn:last-of-type {
+    color: #fff;
+    background-color: #50D074;
+    font-size: 20px;
+}
+
+.is-disabled {
+    display: none;
+}
